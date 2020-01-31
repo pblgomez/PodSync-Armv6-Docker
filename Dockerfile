@@ -1,6 +1,7 @@
 FROM arm32v7/alpine
 LABEL maintainer="Pablo Gómez <pblgomez@gmail.com>"
 
+RUN apk update && apk add ca-certificates
 RUN apk upgrade -U
 RUN apk add \
   py3-pip \
