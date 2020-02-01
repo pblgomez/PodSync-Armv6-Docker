@@ -1,0 +1,12 @@
+version: '3.6'
+services:
+  podsync:
+    user: $PUID:$PGID
+    container_name: podsync
+    image: local/podsync
+    restart: always
+    ports:
+      - 8089:8089
+    volumes:
+      - /path/to/Videos/:/app/data/
+      - /path/to/config.toml:/app/config.toml
