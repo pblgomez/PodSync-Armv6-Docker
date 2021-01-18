@@ -1,4 +1,4 @@
-FROM arm32v7/alpine
+FROM alpine:3.13
 LABEL maintainer="Pablo Gómez <pblgomez@gmail.com>"
 
 RUN apk update && apk add ca-certificates
